@@ -54,4 +54,7 @@ body{background-color:black;color:#efefef;}
 	width: 100%;
 	height: 100%;
 	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
