@@ -1,10 +1,9 @@
 body{background-color:black;color:#efefef;}
 .card{
 	width: 400px;
-	height: auto;
-/*	С‚РµРЅСЊ, РіРґРµ РѕС‚СЃС‚СѓРї РїРѕ X, РѕС‚СЃС‚СѓРї РїРѕ Y, СЂР°Р·РјРµСЂ С‚РµРЅРё, С†РІРµС‚ С‚РµРЅРё*/
-	box-shadow: 0px 0px 1px white;
-/*	РІРЅРµС€РЅРёР№ РѕС‚СЃС‚СѓРї*/
+	height: 300px;
+/*	тень, где отступ по X, отступ по Y, размер тени, цвет тени*/
+/*	внешний отступ*/
 	margin: 30px;
 	border-radius: 20px;
 }
@@ -16,7 +15,7 @@ body{background-color:black;color:#efefef;}
 	padding-right: 5px;
 }
 .card_div_img{
-	width: 100%;
+	width: 400px;
 	height: 300px;
 	border-radius: 20px;
 }
@@ -27,11 +26,11 @@ body{background-color:black;color:#efefef;}
 }
 .all_card{
 	width: 100%;
-/*	СЃРІРѕР№СЃС‚РІРѕ С„Р»РµРєСЃ, РєРѕС‚РѕСЂРѕРµ РґРµР»Р°РµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РїРѕРґРІРёР¶РЅРѕ*/
+/*	свойство флекс, которое делает отображение элементов подвижно*/
 	display: flex;
-/*	С„РёРєСЃРёСЂСѓРµС‚ СЌР»РµРјРµРЅС‚С‹ РїРѕ С†РµРЅС‚СЂСѓ РїРѕ РІРµСЂС‚РёРєР°Р»Рё*/
+/*	фиксирует элементы по центру по вертикали*/
 	align-items: center;
-/*	С„РёРєСЃРёСЂСѓРµС‚ СЌР»РµРјРµРЅС‚С‹ РїРѕ С†РµРЅС‚СЂСѓ РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё*/
+/*	фиксирует элементы по центру по горизонтали*/
 	justify-content: center;
 }
 
@@ -49,4 +48,48 @@ body{background-color:black;color:#efefef;}
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.card_img2{
+	width: 100%;
+	height: 100%;
+	border-radius: 40px;
+	box-shadow: 0px 0px 1px white;
+	height: auto;
+}
+
+.card_nadpis{
+	margin-top: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.nadpis{
+	width: 860px;
+	border-radius: 40px;
+	text-align: center;
+}
+
+.card, .nadpis{
+	transition: 0.2s;
+	box-shadow: 0px 0px 1px white;
+	cursor: default;
+}
+
+.card:hover, .nadpis:hover{
+	transition: 0.2s;
+	box-shadow: 0px 0px 100px white;
+	cursor: pointer;
+}
+
+.card:hover{
+	height: 400px;
+}
+.card_div_img{
+	transition: 0.2s;
+	transform: translateY(-50px);
+}
+
+.card:hover .card_div_img{
+	transition: 0.2s;
+	transform: translateY(50px);
 }
