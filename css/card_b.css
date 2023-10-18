@@ -1,0 +1,51 @@
+.card_b{
+    width: 800px;
+    height:300px;
+    margin: 30px;
+    border-radius: 20px;
+    margin-bottom: 150px; 
+    transition: 0.1s;
+    cursor:deafult;
+}
+.card_b:hover {
+    transition: 0.1s;
+    box-shadow:0px 160px 40px white;
+    cursor: pointer;
+    height: 300px;
+}
+.card_b:hover .card_b_div_img{
+    transform: translateY(50px);
+    transition: 0.1s;
+}
+
+.card_b_h1{
+    text-align: center;
+}
+.card_b_p{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.card_b_div_img{
+
+
+    : 800px;
+    height: 300px;
+    border-radius: 20px;
+}
+.card_b_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.card_b_div_img{
+    top: 0;
+    left: 0;
+    transform: translateY(-50px);
+    transition: 0.1s;
+}
+
+.card_b_div_img:hover{
+    transform: translateY(50px);
+    transition: 0.1s;
+}

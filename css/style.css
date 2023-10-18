@@ -7,6 +7,7 @@ body{background-color:black;color:#efefef;}
 /*	внешний отступ*/
 	margin: 30px;
 	border-radius: 20px;
+	margin-bottom: 150px; 
 }
 .card_h1{
 	text-align: center;
@@ -33,9 +34,10 @@ body{background-color:black;color:#efefef;}
 	align-items: center;
 /*	фиксирует элементы по центру по горизонтали*/
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
-.first_button{
+.menu_button{
 	width: 150px;
 	background-color: black;
 	color: white;
@@ -43,6 +45,7 @@ body{background-color:black;color:#efefef;}
 	box-shadow: 0px 0px 0px white;
 	margin-left: 10px;
 	margin-right: 10px;
+	transition: 0.1s;
 }
 .buttons_card{
 	width: auto;
@@ -90,12 +93,17 @@ body{background-color:black;color:#efefef;}
 
 .card, .nadpis{
 	transition: 0.1s;
-	box-shadow:0px 0px 10px white;
+/*	box-shadow:0px 0px 40px white;*/
 	cursor:deafult;
 }
-.card:hover, .nadpis:hover{
+.card:hover{
 	transition: 0.1s;
-	box-shadow:0px 0px 60px white;
+	box-shadow:0px 160px 40px white;
+	cursor: pointer;
+}
+.nadpis:hover{
+	transition: 0.1s;
+	box-shadow:0px 0px 40px white;
 	cursor: pointer;
 }
 
@@ -112,15 +120,13 @@ body{background-color:black;color:#efefef;}
 	transition: 0.1s;
 }
 
-.buttons_card:hover, .buttons_card1:hover{
+.menu_button:hover {
 	transition: 0.1s;
 	box-shadow:0px 0px 20px blue;
 	cursor: pointer;
-	align-items: center;
-	display: flex;
 }
 .card:hover{
-	height: 400px;
+	height: 300px;
 }
 .card:hover .card_div_img{
 	transform: translateY(50px);
