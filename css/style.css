@@ -40,12 +40,12 @@ body{background-color:black;color:#efefef;}
 	background-color: black;
 	color: white;
 	border-radius: 20px;
-	box-shadow: 0px 0px 1px white;
+	box-shadow: 0px 0px 0px white;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 .buttons_card{
-	width: 100%;
+	width: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -114,8 +114,10 @@ body{background-color:black;color:#efefef;}
 
 .buttons_card:hover, .buttons_card1:hover{
 	transition: 0.1s;
-	box-shadow:0px 0px 40px blue;
+	box-shadow:0px 0px 20px blue;
 	cursor: pointer;
+	align-items: center;
+	display: flex;
 }
 .card:hover{
 	height: 400px;
